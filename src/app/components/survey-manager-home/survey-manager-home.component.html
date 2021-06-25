@@ -1,23 +1,4 @@
 <div class="list row">
-    <!-- <div class="col-md-8">
-      <div class="input-group mb-3">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Search by title"
-          [(ngModel)]="title"
-        />
-        <div class="input-group-append">
-          <button
-            class="btn btn-outline-secondary"
-            type="button"
-            (click)="searchTitle()"
-          >
-            Search
-          </button>
-        </div>
-      </div>
-    </div> -->
     <div class="col-md-6">
       <mat-card>
         <h2>Surveys</h2>
@@ -51,11 +32,9 @@
             </div>
             <div class="row">
                 <div class="col-md-auto">
-                  <!-- <button mat-flat-button color="blue"> -->
                     <a mat-raised-button color="primary" href="/surveys/{{ currentSurvey.id }}">
                       Take the Survey
                     </a>
-                  <!-- </button> -->
                 </div>
                 <div class="col-md-auto">
                     <a mat-raised-button color="accent" href="/stats/{{ currentSurvey.id }}">
