@@ -2,9 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
 
+1. In a command prompt, navigate to the survey-manager-ui directory and run "npm install"
+
+2. You will need to install the Angular CLI if you have not already by running "npm install -g @angular/cli"
+
+3. Finally, follow the Development server instruction below and the app should be up and running assuming the backend is running as well. For instructions on setting up the backend see the README in survey-manager-backend
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
