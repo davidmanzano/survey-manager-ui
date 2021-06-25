@@ -20,7 +20,6 @@ import { AuthenticationButtonComponent } from './components/authentication-butto
 import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { LoadingComponent } from './components/loading/loading.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatInputModule} from '@angular/material/input';
@@ -42,7 +41,6 @@ import {MatCardModule} from '@angular/material/card';
     AuthNavComponent,
     MainNavComponent,
     LoadingComponent,
-    LandingPageComponent
   ],
   imports: [
     BrowserModule,

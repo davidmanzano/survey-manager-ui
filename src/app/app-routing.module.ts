@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { SurveyManagerHomeComponent } from './components/survey-manager-home/survey-manager-home.component';
 import { SurveyWorkflowComponent } from './components/survey-workflow/survey-workflow.component';
 import { SurveyStatisticsComponent } from './components/survey-statistics/survey-statistics.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { AuthGuard } from '@auth0/auth0-angular';
 
 const routes: Routes = [
