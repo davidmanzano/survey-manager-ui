@@ -1,0 +1,73 @@
+<div class="list row">
+    <!-- <div class="col-md-8">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search by title"
+          [(ngModel)]="title"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="searchTitle()"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div> -->
+    <div class="col-md-6">
+      <mat-card>
+        <h2>Surveys</h2>
+        <ul class="list-group">
+          <li
+            class="list-group-item"
+            *ngFor="let survey of surveys; let i = index"
+            [class.active]="i == currentIndex"
+            (click)="setActiveSurvey(survey, i)"
+          >
+            {{ survey.title }}
+          </li>
+        </ul>
+      </mat-card>
+    </div>
+    <div class="col-md-6">
+      <mat-card *ngIf="currentSurvey.id">
+          <div *ngIf="currentSurvey.id">
+            
+            <h2>Survey Details</h2>
+            <div>
+              <label><strong>Title:</strong></label> {{ currentSurvey.title }}
+            </div>
+            <div>
+              <label><strong>Description:</strong></label>
+              {{ currentSurvey.description }}
+            </div>
+            <div>
+                <label><strong>Total Surveys Completed:</strong></label>
+                {{ currentSurvey.count }}
+            </div>
+            <div class="row">
+                <div class="col-md-auto">
+                  <!-- <button mat-flat-button color="blue"> -->
+                    <a mat-raised-button color="primary" href="/surveys/{{ currentSurvey.id }}">
+                      Take the Survey
+                    </a>
+                  <!-- </button> -->
+                </div>
+                <div class="col-md-auto">
+                    <a mat-raised-button color="accent" href="/stats/{{ currentSurvey.id }}">
+                        Statistics
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div *ngIf="!currentSurvey">
+            <br />
+            <p>Please click on a Survey...</p>
+          </div>
+      </mat-card>
+    </div>
+  </div>
